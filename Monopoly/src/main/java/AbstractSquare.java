@@ -1,7 +1,5 @@
-
-
 public abstract class AbstractSquare implements ISquare {
-	private String name;
+	protected String name;
 	
 	public String getName() {
 		return this.name;

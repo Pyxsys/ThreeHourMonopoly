@@ -7,5 +7,9 @@ public class Board {
 		
 	}
 	
+	public ArrayList<AbstractSquare> getSquares() {
+		return squares;
+	}
+	
 	
 }

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -20,6 +22,14 @@ public class TestBoard {
 	@Test
 	public void testCreatedBoard() {
 		Assert.assertNotNull(board);
+	}
+	
+	@Test
+	public void testEmptySquaresList() {
+		ArrayList<AbstractSquare> expectedList = null;
+		ArrayList<AbstractSquare> squares = board.getSquares();
+		
+		Assert.assertEquals(expectedList, squares);
 	}
 
 }

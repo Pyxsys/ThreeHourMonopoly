@@ -1,22 +1,16 @@
-import static org.junit.Assert.*;
 
-import org.junit.After;
-import org.junit.Before;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class TestSquares {
-
-	@Before
-	public void setUp() throws Exception {
-	}
-
-	@After
-	public void tearDown() throws Exception {
-	}
+	ISquare square;
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testGetSquareName() {
+		String inputName = "Park Place";
+		square = new PropertySquare(inputName);
+
+		Assert.assertEquals(inputName, square.getName());
 	}
 
 }
